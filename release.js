@@ -22,23 +22,23 @@ inquirer
     },
   ])
   .then(function(answer) {
-    // Step 0. Double check and make sure everything looks good
+    // Step 1. Double check and make sure everything looks good
     console.log('Validating...');
     execSync('npm run test');
 
-    // Step 1. Bump up version number
+    // Step 2. Bump up version number
     console.log('Bumping up version number...');
     execSync('npm version ' + answer.semver);
     var version = require('./package.json').version;
     console.log('New version is: ' + version);
 
-    // Step 4. Tag the new version
+    // Step 3. Tag the new version
     console.log('Tag new version ' + version);
     execSync('git tag ' + version);
     execSync('git push --follow-tags --no-verify');
     console.log('Publishing to npm...');
 
-    // Step 5. NPM publish
+    // Step 4. NPM publish
     execSync('npm publish');
     console.log('Done');
   });
