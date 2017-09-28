@@ -3,10 +3,13 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const autoPrefixer = require('autoprefixer');
 const path = require('path');
+const srcDir = path.join(__dirname, './src/');
+const dstDir = path.join(__dirname, './build/');
 
 // Okay, this may be confusing at first glance but go through it step-by-step
 module.exports = env => {
-  const ifProd = plugin =>  env.prod ? plugin : undefined;
+  const ifProd = plugin => (env.prod ? plugin : undefined);
+  const isDev = plugin => (env.dev ? plugin : undefined);
   const removeEmpty = array => array.filter(p => !!p);
 
   const extractSass = new ExtractTextPlugin({
@@ -20,7 +23,7 @@ module.exports = env => {
      * entry tells webpack where to start looking.
      */
     entry: {
-      app: path.join(__dirname, '../src/'),
+      app: srcDir,
     },
     /**
      * output tells webpack where to put the files he creates
@@ -28,7 +31,7 @@ module.exports = env => {
      */
     output: {
       filename: '[name].js',
-      path: path.join(__dirname, '../build/'),
+      path: dstDir,
     },
 
     module: {
@@ -70,10 +73,12 @@ module.exports = env => {
       * from within our index.html
       */
       new HtmlWebpackPlugin({
-        template: path.join(__dirname, '../src/index.html'),
+        template: path.join(__dirname, './src/index.html'),
         filename: 'index.html',
         inject: 'body',
       }),
+
+      isDev(new webpack.HotModuleReplacementPlugin()),
 
       // Only running UglifyJsPlugin() in production
       ifProd(new webpack.optimize.UglifyJsPlugin({
@@ -91,5 +96,14 @@ module.exports = env => {
 
       extractSass,
     ]),
+
+    devServer: {
+      contentBase: srcDir,
+      historyApiFallback: true,
+      disableHostCheck: true,
+      hot: true,
+      inline: true,
+      port: 3000,
+    },
   };
 };

@@ -15,8 +15,8 @@
   "license": "MIT",
   "scripts": {
     "lint": "eslint ./src",
-    "dev": "NODE_ENV=development node webpack/webpack-dev-server --env.dev",
-    "build": "rm -Rf build/* | NODE_ENV=production webpack --config webpack/webpack.config.js --progress --env.prod"
+    "dev": "NODE_ENV=development webpack-dev-server --env.dev --open",
+    "build": "rm -Rf build/* | NODE_ENV=production webpack --progress --env.prod"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.4",
