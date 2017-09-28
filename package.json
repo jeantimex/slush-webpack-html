@@ -21,7 +21,6 @@
         "npm": ">=1.4.3"
     },
     "scripts": {
-        "release": "node ./release.js",
         "test": "echo \"No tests\""
     },
     "dependencies": {
