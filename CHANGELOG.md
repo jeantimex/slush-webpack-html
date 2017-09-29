@@ -1,5 +1,11 @@
 # Change Log
 
+## [v0.3.4](https://github.com/jeantimex/slush-webpack-html/tree/v0.3.4) (2017-09-29)
+[Full Changelog](https://github.com/jeantimex/slush-webpack-html/compare/v0.3.3...v0.3.4)
+
+## [v0.3.3](https://github.com/jeantimex/slush-webpack-html/tree/v0.3.3) (2017-09-29)
+[Full Changelog](https://github.com/jeantimex/slush-webpack-html/compare/v0.3.2...v0.3.3)
+
 ## [v0.3.2](https://github.com/jeantimex/slush-webpack-html/tree/v0.3.2) (2017-09-29)
 [Full Changelog](https://github.com/jeantimex/slush-webpack-html/compare/v0.3.1...v0.3.2)
 
