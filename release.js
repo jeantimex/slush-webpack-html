@@ -42,7 +42,7 @@ inquirer
     execSync('npm publish');
 
     // Step 5. Update change log
-    execSync('github_changelog_generator jeantimex/slush-webpack-html --token 1edc3c83bf36c8db38a69950f811a083ade5b02f');
+    execSync('github_changelog_generator jeantimex/slush-webpack-html');
     execSync('git commit -am "Update change log"');
     execSync('git push');
 
