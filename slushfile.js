@@ -80,8 +80,10 @@ gulp.task('default', function (done) {
         message: 'Continue?'
     }];
     //Ask
-    inquirer.prompt(prompts,
-        function (answers) {
+    inquirer
+        .prompt(prompts)
+        .then(function (answers) {
+            console.log(answers);
             if (!answers.moveon) {
                 return done();
             }
