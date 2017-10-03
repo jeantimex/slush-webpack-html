@@ -1,6 +1,6 @@
 # Slush Webpack-html
 
-> Scaffold your next html5 app with webpack and webpack dev server.
+Scaffold your next html5 app with webpack and webpack dev server.
 
 [![npm version](https://badge.fury.io/js/slush-webpack-html.svg)](https://badge.fury.io/js/slush-webpack-html)
 [![Build Status](https://secure.travis-ci.org/jeantimex/slush-webpack-html.png?branch=master)](https://travis-ci.org/jeantimex/slush-webpack-html)
@@ -25,6 +25,21 @@ Run the generator from within the new folder:
 
 ```bash
 $ cd myapp && slush webpack-html
+```
+
+After the project is scaffolded, run the following command to start the demo:
+```bash
+$ npm run dev
+```
+
+Test the project:
+```bash
+$ npm run test
+```
+
+Build and ship your awesome project:
+```bash
+$ npm run build
 ```
 
 ## Getting To Know Slush
