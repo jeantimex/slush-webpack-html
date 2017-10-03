@@ -83,13 +83,12 @@ gulp.task('default', function (done) {
     inquirer
         .prompt(prompts)
         .then(function (answers) {
-            console.log(answers);
             if (!answers.moveon) {
                 return done();
             }
             answers.appNameSlug = _.slugify(answers.appName);
             gulp.src(__dirname + '/templates/**')
-                .pipe(template(answers))
+                .pipe(template(answers, {interpolate: /<%=([\s\S]+?)%>/g}))
                 .pipe(rename(function (file) {
                     if (file.basename[0] === '_') {
                         file.basename = '.' + file.basename.slice(1);
