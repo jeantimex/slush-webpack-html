@@ -1,5 +1,16 @@
 # Change Log
 
+## [v1.0.0](https://github.com/jeantimex/slush-webpack-html/tree/v1.0.0) (2017-10-03)
+[Full Changelog](https://github.com/jeantimex/slush-webpack-html/compare/v0.3.4...v1.0.0)
+
+**Closed issues:**
+
+- Unit tests [\#1](https://github.com/jeantimex/slush-webpack-html/issues/1)
+
+**Merged pull requests:**
+
+- Added unit test and code coverage support. [\#2](https://github.com/jeantimex/slush-webpack-html/pull/2) ([jeantimex](https://github.com/jeantimex))
+
 ## [v0.3.4](https://github.com/jeantimex/slush-webpack-html/tree/v0.3.4) (2017-09-29)
 [Full Changelog](https://github.com/jeantimex/slush-webpack-html/compare/v0.3.3...v0.3.4)
 
