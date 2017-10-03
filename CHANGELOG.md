@@ -1,5 +1,12 @@
 # Change Log
 
+## [v1.0.1](https://github.com/jeantimex/slush-webpack-html/tree/v1.0.1) (2017-10-03)
+[Full Changelog](https://github.com/jeantimex/slush-webpack-html/compare/v1.0.0...v1.0.1)
+
+**Merged pull requests:**
+
+- Update README.md [\#3](https://github.com/jeantimex/slush-webpack-html/pull/3) ([jeantimex](https://github.com/jeantimex))
+
 ## [v1.0.0](https://github.com/jeantimex/slush-webpack-html/tree/v1.0.0) (2017-10-03)
 [Full Changelog](https://github.com/jeantimex/slush-webpack-html/compare/v0.3.4...v1.0.0)
 
