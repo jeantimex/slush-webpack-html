@@ -4,6 +4,7 @@ Scaffold your next html5 app with webpack and webpack dev server.
 
 [![npm version](https://badge.fury.io/js/slush-webpack-html.svg)](https://badge.fury.io/js/slush-webpack-html)
 [![Build Status](https://secure.travis-ci.org/jeantimex/slush-webpack-html.png?branch=master)](https://travis-ci.org/jeantimex/slush-webpack-html)
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=BFXQGY77CV3T2)
 
 ## Getting Started
 
